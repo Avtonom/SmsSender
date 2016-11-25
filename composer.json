@@ -1,5 +1,5 @@
 {
-    "name": "avtonom/SmsSender",
+    "name": "avtonom/sms-sender",
     "type": "library",
     "description": "The almost missing SMS sending PHP library.",
     "keywords": ["sms", "abstraction"],
