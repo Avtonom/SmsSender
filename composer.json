@@ -1,9 +1,9 @@
 {
-    "name": "Carpe-Hora/SmsSender",
+    "name": "avtonom/SmsSender",
     "type": "library",
     "description": "The almost missing SMS sending PHP library.",
     "keywords": ["sms", "abstraction"],
-    "homepage": "http://github.com/Carpe-Hora/SmsSender",
+    "homepage": "https://github.com/Avtonom/SmsSender",
     "license": "MIT",
     "authors": [
         {
