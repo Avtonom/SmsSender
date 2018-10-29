@@ -58,6 +58,28 @@ class SmsSender implements SmsSenderInterface
     }
 
     /**
+     * @param string $messageId
+     *
+     * @return array
+     *
+     * @throws WrappedException
+     */
+    public function getSmsStatus($messageId)
+    {
+        if (empty($messageId)) {
+            throw new InvalidCredentialsException('Empty $messageId');
+        }
+
+        try {
+            $data = $this->getProvider()->getSmsStatus($messageId);
+        } catch (Exception $e) {
+            throw new WrappedException($e, array('$messageId' => $messageId));
+        }
+
+        return $data;
+    }
+
+    /**
      * Registers a provider.
      *
      * @param  \SmsSender\Provider\ProviderInterface $provider
